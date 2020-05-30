@@ -6,12 +6,16 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Not-Paid Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return NotPaid(
+      dueDate: DateTime(2020, 5, 12),
+      deadlineDays: 20,
+      child: MaterialApp(
+        title: 'Not-Paid Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: DemoPage(title: 'Not Paid Demo Page'),
       ),
-      home: DemoPage(title: 'Not Paid Demo Page'),
     );
   }
 }
@@ -35,16 +39,7 @@ class _DemoPageState extends State<DemoPage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            NotPaid(
-                dueDate: DateTime(2020, 5, 20),
-                deadlineDays: 24,
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                ))
-          ],
+          children: <Widget>[],
         ),
       ),
     );

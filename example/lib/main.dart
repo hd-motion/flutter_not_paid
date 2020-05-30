@@ -37,11 +37,13 @@ class _DemoPageState extends State<DemoPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             NotPaid(
+                dueDate: DateTime(2020, 5, 20),
+                deadlineDays: 24,
                 child: Container(
-              width: 100,
-              height: 100,
-              color: Colors.green,
-            ))
+                  width: 100,
+                  height: 100,
+                  color: Colors.green,
+                ))
           ],
         ),
       ),

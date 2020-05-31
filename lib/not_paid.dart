@@ -42,7 +42,8 @@ class _NotPaidState extends State<NotPaid> {
   }
 
   double calculateOpacity(int daysRemaining) {
-    double opacityValue = (widget.deadlineDays + daysRemaining) / widget.deadlineDays;
+    double opacityValue =
+        (widget.deadlineDays + daysRemaining) / widget.deadlineDays;
     if (opacityValue < 0.0) {
       opacityValue = 0.0;
     }

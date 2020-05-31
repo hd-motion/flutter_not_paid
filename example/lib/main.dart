@@ -7,10 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NotPaid(
-      dueDate: DateTime(2020, 5, 12),
-      deadlineDays: 20,
+      // Due date after which the app fading starts.
+      dueDate: DateTime(2020, 6, 1),
+      // As this deadline day reaches the app completely fades away.
+      deadlineDays: 10,
       child: MaterialApp(
         title: 'Not-Paid Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -39,7 +42,18 @@ class _DemoPageState extends State<DemoPage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(32.0),
+              child: Text(
+                "Your App content",
+                style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold),
+              ),
+            )
+          ],
         ),
       ),
     );

@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - Release
 
-* TODO: Describe initial release.
+* Section/App fade starts after due date
+* Section/App completely  fades when deadline exceeds
+

@@ -1,8 +1,8 @@
 name: not_paid
 description: Flutter package to hide out whole application or sections if you are not paid for the job done. 
-version: 0.0.1
-author:
-homepage:
+version: 1.0.0
+author: Harpreet Seera <harpreetseera8525@gmail.com>
+homepage: https://github.com/hd-motion/flutter_not_paid
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

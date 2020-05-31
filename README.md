@@ -7,7 +7,7 @@ Worried about your paymemt..? Using this package you can provide a non paid vers
 
 ## Demo Screen Shots
 
-<img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/before_due_date.png" height="35%" width="35%"  alt="Before due date demo"/><img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/after_due_date.png"   height="35%" width="35%" alt="After due date(mid deadline) demo" /> <img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/deadline_exceeded.png"   height="35%" width="35%" alt="Deadline exceeded demo" />
+<img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/before_due_date.png" height="25%" width="25%"  alt="Before due date demo"/><img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/after_due_date.png"   height="25%" width="25%" alt="After due date(mid deadline) demo" /> <img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/deadline_exceeded.png"   height="25%" width="25%" alt="Deadline exceeded demo" />
 
 
 ## Installation

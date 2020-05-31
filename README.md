@@ -1,17 +1,17 @@
 # not_paid
 
-Worried about your paymemt..? Using this package you can provide a non paid version of app to the client that consistently starts fading out the app/sections after the due date and fades it completly when the deadline is exceeded.
+Worried about your payment? Using this package you can provide a non paid version of your app to the client that consistently starts fading out the app/sections after the due date, and fades it out completly when the deadline is exceeded.
 
 ## Supported Dart Versions
 **Dart SDK version >= 2.1.0**
 
-## Demo Screen Shots
+## Demo 
 
 <img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/before_due_date.png" height="25%" width="25%"  alt="Before due date demo"/>   <img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/after_due_date.png"   height="25%" width="25%" alt="After due date(mid deadline) demo" />   <img src="https://raw.githubusercontent.com/hd-motion/flutter_not_paid/master/screenshots/deadline_exceeded.png"   height="25%" width="25%" alt="Deadline exceeded demo" />
 
 
 ## Installation
-[![Pub](https://img.shields.io/badge/pub-1.0.0-blue)](https://pub.dev/packages/account_selector)
+[![Pub](https://img.shields.io/badge/pub-1.0.0-blue)](https://pub.dev/packages/not_paid)
 
 Add the Package
 ```yaml
@@ -21,14 +21,12 @@ dependencies:
 
 ## How to use
 
-
-
 Import the package in your dart file
 
 ```dart
 import 'package:not_paid/not_paid.dart';
 ```
-Wrap the widget which ever you want to fade out under the NotPaid widget. To Fade out the whole app just wrap your material app inside the NotPaid widget.
+Wrap the widget which ever you want to fade out under the NotPaid widget. To fade out the whole app just wrap your material app inside the NotPaid widget.
 ```dart
 class MyApp extends StatelessWidget {
   @override
@@ -55,14 +53,14 @@ class MyApp extends StatelessWidget {
 
 These are the basic params required by NotPaid widget.
 
-For showAccountSelectorSheet
-
-| Attribute           | Type   |
+| Params              | Type   |
 | -------------       | :-----:|
 | dueDate             | DateTime  |
 | deadlineDays        | int  |
 | child               | Widget |
 
+### Inspire from
+[not-paid by @kleampa](https://github.com/kleampa/not-paid)
 
 ### Created & Maintained By
 

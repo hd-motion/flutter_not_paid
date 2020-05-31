@@ -19,7 +19,7 @@ class _NotPaidState extends State<NotPaid> {
 
   @override
   void initState() {
-    int daysRemaining = checkRemainingDays();
+    int daysRemaining = getRemainingDays();
     print(daysRemaining);
     if (daysRemaining < 1) {
       opacity = calculateOpacity(daysRemaining);
@@ -35,15 +35,14 @@ class _NotPaidState extends State<NotPaid> {
     );
   }
 
-  int checkRemainingDays() {
+  int getRemainingDays() {
     DateTime currentDate = DateTime.now();
     int daysRemaining = widget.dueDate.difference(currentDate).inDays;
     return daysRemaining;
   }
 
   double calculateOpacity(int daysRemaining) {
-    double opacityValue =
-        (widget.deadlineDays + daysRemaining) / widget.deadlineDays;
+    double opacityValue = (widget.deadlineDays + daysRemaining) / widget.deadlineDays;
     if (opacityValue < 0.0) {
       opacityValue = 0.0;
     }
